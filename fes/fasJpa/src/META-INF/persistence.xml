@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="fasJpa">
+		<class>fasJpa.Avi</class>
+		<class>fasJpa.Concour</class>
+		<class>fasJpa.Contrat</class>
+		<class>fasJpa.CoursPreparation</class>
+		<class>fasJpa.Diplome</class>
+		<class>fasJpa.Entreprise</class>
+		<class>fasJpa.Etablissement</class>
+		<class>fasJpa.Filiere</class>
+		<class>fasJpa.Formation</class>
+		<class>fasJpa.GroupeMatiere</class>
+		<class>fasJpa.Localisation</class>
+		<class>fasJpa.Matiere</class>
+		<class>fasJpa.NiveauDiplome</class>
+		<class>fasJpa.NotesScolaire</class>
+		<class>fasJpa.OffreEmploi</class>
+		<class>fasJpa.Poste</class>
+		<class>fasJpa.SousFiliere</class>
+		<class>fasJpa.TypeEntreprise</class>
+		<class>fasJpa.TypeEtablissement</class>
+		<class>fasJpa.Utilisateur</class>
+	</persistence-unit>
+</persistence>
