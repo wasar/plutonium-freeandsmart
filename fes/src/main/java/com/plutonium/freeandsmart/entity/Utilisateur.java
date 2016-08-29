@@ -37,7 +37,7 @@ public class Utilisateur implements Serializable {
 
 	//bi-directional many-to-one association to Avi
 	@OneToMany(mappedBy="utilisateur")
-	private List<Avi> avis;
+	private List<Avis> avis;
 
 	//bi-directional many-to-one association to NotesScolaire
 	@OneToMany(mappedBy="utilisateur")
@@ -118,22 +118,22 @@ public class Utilisateur implements Serializable {
 		this.ville = ville;
 	}
 
-	public List<Avi> getAvis() {
+	public List<Avis> getAvis() {
 		return this.avis;
 	}
 
-	public void setAvis(List<Avi> avis) {
+	public void setAvis(List<Avis> avis) {
 		this.avis = avis;
 	}
 
-	public Avi addAvi(Avi avi) {
+	public Avis addAvi(Avis avi) {
 		getAvis().add(avi);
 		avi.setUtilisateur(this);
 
 		return avi;
 	}
 
-	public Avi removeAvi(Avi avi) {
+	public Avis removeAvi(Avis avi) {
 		getAvis().remove(avi);
 		avi.setUtilisateur(null);
 

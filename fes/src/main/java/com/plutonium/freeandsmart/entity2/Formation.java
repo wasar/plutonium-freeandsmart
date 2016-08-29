@@ -1,4 +1,4 @@
-package com.plutonium.freeandsmart.entity;
+package com.plutonium.freeandsmart.entity2;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("deprecation")
-@Entity
 @Table(name = "FORMATION")
 public class Formation implements Serializable {
 

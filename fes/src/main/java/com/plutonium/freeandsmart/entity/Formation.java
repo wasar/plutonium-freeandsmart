@@ -28,7 +28,7 @@ public class Formation implements Serializable {
 
 	//bi-directional many-to-one association to Concour
 	@OneToMany(mappedBy="formation")
-	private List<Concour> concours;
+	private List<Concours> concours;
 
 	//bi-directional many-to-one association to Diplome
 	@ManyToOne
@@ -93,22 +93,22 @@ public class Formation implements Serializable {
 		this.nombreplace = nombreplace;
 	}
 
-	public List<Concour> getConcours() {
+	public List<Concours> getConcours() {
 		return this.concours;
 	}
 
-	public void setConcours(List<Concour> concours) {
+	public void setConcours(List<Concours> concours) {
 		this.concours = concours;
 	}
 
-	public Concour addConcour(Concour concour) {
+	public Concours addConcour(Concours concour) {
 		getConcours().add(concour);
 		concour.setFormation(this);
 
 		return concour;
 	}
 
-	public Concour removeConcour(Concour concour) {
+	public Concours removeConcour(Concours concour) {
 		getConcours().remove(concour);
 		concour.setFormation(null);
 

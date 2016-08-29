@@ -1,4 +1,4 @@
-package com.plutonium.freeandsmart.entity;
+package com.plutonium.freeandsmart.entity2;
 
 import java.io.Serializable;
 
@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @SuppressWarnings("deprecation")
-@Entity
 @Table(name = "GROUPE_MATIERE")
 public class GroupeMatiere implements Serializable {
 

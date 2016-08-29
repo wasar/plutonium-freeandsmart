@@ -13,8 +13,8 @@ import java.util.List;
  */
 @Entity
 @Table(name="concours")
-@NamedQuery(name="Concour.findAll", query="SELECT c FROM Concour c")
-public class Concour implements Serializable {
+@NamedQuery(name="Concour.findAll", query="SELECT c FROM Concours c")
+public class Concours implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -26,6 +26,7 @@ public class Concour implements Serializable {
 
 	private Integer cout;
 
+	//TODO Timestamp ?
 	private Timestamp date;
 
 	private Integer duree;
@@ -50,7 +51,7 @@ public class Concour implements Serializable {
 	@OneToMany(mappedBy="concour")
 	private List<CoursPreparation> coursPreparations;
 
-	public Concour() {
+	public Concours() {
 	}
 
 	public Integer getId() {

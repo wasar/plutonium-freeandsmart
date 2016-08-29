@@ -1,4 +1,4 @@
-package com.plutonium.freeandsmart.entity;
+package com.plutonium.freeandsmart.entity2;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @SuppressWarnings("deprecation")
-@Entity
 @Table(name = "UTILISATEUR")
 public class Utilisateur implements Serializable {
 

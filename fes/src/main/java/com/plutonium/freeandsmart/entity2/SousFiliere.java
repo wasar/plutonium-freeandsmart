@@ -1,4 +1,4 @@
-package com.plutonium.freeandsmart.entity;
+package com.plutonium.freeandsmart.entity2;
 
 import java.io.Serializable;
 
@@ -13,7 +13,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("deprecation")
-@Entity
 @Table(name = "SOUS_FILIERE")
 public class SousFiliere implements Serializable {
 

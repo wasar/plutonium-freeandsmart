@@ -31,7 +31,7 @@ public class CoursPreparation implements Serializable {
 	//bi-directional many-to-one association to Concour
 	@ManyToOne
 	@JoinColumn(name="id_concours")
-	private Concour concour;
+	private Concours concour;
 
 	public CoursPreparation() {
 	}
@@ -84,11 +84,11 @@ public class CoursPreparation implements Serializable {
 		this.organisme = organisme;
 	}
 
-	public Concour getConcour() {
+	public Concours getConcour() {
 		return this.concour;
 	}
 
-	public void setConcour(Concour concour) {
+	public void setConcour(Concours concour) {
 		this.concour = concour;
 	}
 

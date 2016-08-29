@@ -11,10 +11,11 @@ import java.sql.Timestamp;
  */
 @Entity
 @Table(name="avis")
-@NamedQuery(name="Avi.findAll", query="SELECT a FROM Avi a")
-public class Avi implements Serializable {
+@NamedQuery(name="Avis.findAll", query="SELECT a FROM Avis a")
+public class Avis implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	// Mettre les IDs en Long
 	@Id
 	private Integer id;
 
@@ -29,7 +30,7 @@ public class Avi implements Serializable {
 	@JoinColumn(name="id_utilisateur")
 	private Utilisateur utilisateur;
 
-	public Avi() {
+	public Avis() {
 	}
 
 	public Integer getId() {
